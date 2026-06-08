@@ -2082,12 +2082,29 @@
       const date = document.getElementById('bookingDate').value;
       const service = document.getElementById('bookingService').value;
       
+      // Construct WhatsApp URL
+      const whatsappNumber = "917986506487";
+      const messageText = `Hi Sarna Travels,\n\nI would like to book a ride with details:\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Pickup Location:* ${pickup}\n*Destination:* ${destination}\n*Journey Date:* ${date}\n*Service Type:* ${service}`;
+      const encodedText = encodeURIComponent(messageText);
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
+
       // Construct dynamic message in modal
       const modalMessage = document.getElementById('modalMessage');
-      modalMessage.innerHTML = `Hi <strong>${name}</strong>, your taxi booking request for <strong>${service}</strong> on <strong>${date}</strong> (from <strong>${pickup}</strong> to <strong>${destination}</strong>) has been logged. A representative will contact you on <strong>${phone}</strong> within 10 minutes to verify pricing and assign a cab.`;
+      modalMessage.innerHTML = `Hi <strong>${name}</strong>, your ride details have been prepared.<br><br>We are redirecting you to WhatsApp to send your booking instantly. If the chat window does not open automatically, click the button below.`;
       
+      // Update modal action button to send to WhatsApp manually
+      const modalActionBtn = document.querySelector('#successModal .btn-primary');
+      modalActionBtn.textContent = "Send via WhatsApp";
+      modalActionBtn.onclick = function() {
+        window.open(whatsappUrl, '_blank');
+        closeModal();
+      };
+
       // Open Success Modal
       document.getElementById('successModal').classList.add('open');
+      
+      // Attempt to open WhatsApp in a new tab/window immediately
+      window.open(whatsappUrl, '_blank');
       
       // Reset Form fields
       document.getElementById('taxiBookingForm').reset();
@@ -2100,6 +2117,13 @@
     // Close Success Modal
     function closeModal() {
       document.getElementById('successModal').classList.remove('open');
+      
+      // Reset modal button to default text and action after closing
+      setTimeout(() => {
+        const modalActionBtn = document.querySelector('#successModal .btn-primary');
+        modalActionBtn.textContent = "Great, Thanks!";
+        modalActionBtn.onclick = closeModal;
+      }, 300); // Wait for modal slide out animation to finish
     }
 
     // Close modal if clicked outside modal-content
