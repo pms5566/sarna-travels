@@ -1,0 +1,2039 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarna Tour and Travels | Premium Taxi & Tour Service in Rajpura, Punjab</title>
+  <meta name="description" content="Affordable and professional taxi services, local & outstation rides, Chandigarh Airport transfers, and popular Himachal, Delhi, Amritsar tour packages. Sarna Tour and Travels - Your Journey, Our Responsibility.">
+  
+  <!-- Google Fonts: Montserrat (Headings) & Poppins (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    /* CSS VARIABLES - DESIGN SYSTEM */
+    :root {
+      --primary: #0a1f44;
+      --primary-light: #123166;
+      --primary-dark: #051024;
+      --accent: #ff6b00;
+      --accent-hover: #e05e00;
+      --accent-light: #fff0e6;
+      --accent-gradient: linear-gradient(135deg, #ff6b00 0%, #ff8e3c 100%);
+      --blue-gradient: linear-gradient(135deg, #0a1f44 0%, #123166 50%, #1b4793 100%);
+      --glass-bg: rgba(255, 255, 255, 0.08);
+      --glass-border: rgba(255, 255, 255, 0.12);
+      
+      --text-dark: #1e293b;
+      --text-light: #ffffff;
+      --text-muted: #64748b;
+      --bg-light: #f8fafc;
+      --bg-white: #ffffff;
+      
+      --shadow-sm: 0 2px 8px rgba(10, 31, 68, 0.05);
+      --shadow-md: 0 10px 30px rgba(10, 31, 68, 0.08);
+      --shadow-lg: 0 20px 40px rgba(10, 31, 68, 0.15);
+      --shadow-accent: 0 10px 25px rgba(255, 107, 0, 0.3);
+      
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      
+      --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* GLOBAL RESET & BASE STYLES */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-dark);
+      background-color: var(--bg-white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition-fast);
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      outline: none;
+    }
+
+    img, svg {
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+
+    /* CONTAINER */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.85rem 1.8rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border-radius: var(--radius-sm);
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: var(--transition-normal);
+      gap: 0.5rem;
+    }
+
+    .btn-primary {
+      background: var(--accent-gradient);
+      color: var(--text-light);
+      box-shadow: var(--shadow-accent);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(255, 107, 0, 0.45);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border-color: var(--text-light);
+      color: var(--text-light);
+    }
+
+    .btn-secondary:hover {
+      background: var(--text-light);
+      color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline-primary {
+      background: transparent;
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .btn-outline-primary:hover {
+      background: var(--accent);
+      color: var(--text-light);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-accent);
+    }
+
+    /* BADGES */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.4rem 1rem;
+      background-color: rgba(255, 107, 0, 0.15);
+      color: var(--accent);
+      border: 1px solid rgba(255, 107, 0, 0.3);
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      gap: 0.35rem;
+    }
+
+    .badge-glow-light {
+      background-color: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.2);
+      color: var(--text-light);
+      animation: pulseGlow 2s infinite ease-in-out;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.9; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.03); }
+    }
+
+    /* SECTION HEADING */
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 3.5rem auto;
+    }
+
+    .section-header h2 {
+      font-size: 2.25rem;
+      color: var(--primary);
+      margin-top: 0.75rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .section-header h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: var(--accent);
+      margin: 0.75rem auto 0 auto;
+      border-radius: 2px;
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* SECTION STRUCTURE */
+    section {
+      padding: 5rem 0;
+    }
+
+    /* HEADER & NAVIGATION */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: var(--transition-normal);
+      padding: 1.25rem 0;
+    }
+
+    header.scrolled {
+      background-color: rgba(10, 31, 68, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 0.85rem 0;
+      box-shadow: var(--shadow-md);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      background: var(--primary-dark);
+      border: 2px solid var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(10, 31, 68, 0.3);
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--text-light);
+      letter-spacing: -0.5px;
+    }
+
+    .logo-subtitle {
+      font-size: 0.7rem;
+      color: var(--accent);
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-top: -2px;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav-link {
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 0.25rem 0;
+      position: relative;
+    }
+
+    .nav-link:hover {
+      color: var(--text-light);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--accent);
+      transition: var(--transition-normal);
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .nav-phone {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-light);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .nav-phone svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--accent);
+    }
+
+    /* Hamburger Menu Button */
+    .menu-toggle {
+      display: none;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      width: 30px;
+      height: 24px;
+      position: relative;
+      z-index: 1100;
+    }
+
+    .menu-toggle span {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: var(--text-light);
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+    }
+
+    .menu-toggle span:nth-child(1) { top: 0px; }
+    .menu-toggle span:nth-child(2) { top: 10px; }
+    .menu-toggle span:nth-child(3) { top: 20px; }
+
+    .menu-toggle.open span:nth-child(1) {
+      top: 10px;
+      transform: rotate(135deg);
+    }
+
+    .menu-toggle.open span:nth-child(2) {
+      opacity: 0;
+      left: -60px;
+    }
+
+    .menu-toggle.open span:nth-child(3) {
+      top: 10px;
+      transform: rotate(-135deg);
+    }
+
+    /* 1. HERO SECTION */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 650px;
+      background: var(--blue-gradient);
+      color: var(--text-light);
+      display: flex;
+      align-items: center;
+      padding-top: 5rem;
+      overflow: hidden;
+    }
+
+    /* Custom geometric grid overlays to avoid images */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60%;
+      height: 100%;
+      background: radial-gradient(circle at 70% 30%, rgba(255, 107, 0, 0.08) 0%, transparent 60%),
+                  radial-gradient(circle at 40% 70%, rgba(27, 71, 147, 0.4) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(to top, var(--bg-white), transparent);
+      pointer-events: none;
+    }
+
+    .hero-bg-lines {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.04;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 10;
+      max-width: 750px;
+    }
+
+    .hero-content .badge {
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-content h1 {
+      font-size: 3.75rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      color: var(--text-light);
+    }
+
+    .hero-content .tagline {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 2.25rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .hero-content p.desc {
+      font-size: 1.05rem;
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 2.5rem;
+      max-width: 600px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    /* 2. SERVICES SECTION */
+    .services {
+      background-color: var(--bg-light);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-md);
+      padding: 2.5rem 2rem;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition-normal);
+      border: 1px solid rgba(10, 31, 68, 0.04);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(255, 107, 0, 0.2);
+    }
+
+    .service-icon {
+      width: 64px;
+      height: 64px;
+      background-color: rgba(10, 31, 68, 0.05);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      transition: var(--transition-normal);
+      color: var(--primary);
+    }
+
+    .service-card:hover .service-icon {
+      background: var(--accent-gradient);
+      color: var(--text-light);
+      box-shadow: var(--shadow-accent);
+    }
+
+    .service-card h3 {
+      font-size: 1.25rem;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .service-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 0.9rem;
+      transition: var(--transition-fast);
+    }
+
+    .service-card:hover .service-link {
+      color: var(--accent);
+    }
+
+    .service-link svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+      transition: var(--transition-fast);
+    }
+
+    .service-card:hover .service-link svg {
+      transform: translateX(4px);
+    }
+
+    /* 3. POPULAR TOUR PACKAGES SECTION */
+    .packages {
+      background-color: var(--bg-white);
+    }
+
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .package-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(10, 31, 68, 0.05);
+      transition: var(--transition-normal);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .package-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    /* Graphic image-replacement container using pure CSS gradients */
+    .package-image-placeholder {
+      height: 200px;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      padding: 1.5rem;
+      color: var(--text-light);
+      overflow: hidden;
+    }
+
+    /* Different background photos for each package with a dark overlay to maintain text contrast */
+    .p-manali {
+      background: linear-gradient(to bottom, rgba(10, 31, 68, 0.1), rgba(10, 31, 68, 0.75)),
+                  url('assets/manali.png') no-repeat center/cover;
+    }
+    .p-amritsar {
+      background: linear-gradient(to bottom, rgba(10, 31, 68, 0.1), rgba(10, 31, 68, 0.75)),
+                  url('assets/amritsar.png') no-repeat center/cover;
+    }
+    .p-delhi {
+      background: linear-gradient(to bottom, rgba(10, 31, 68, 0.1), rgba(10, 31, 68, 0.75)),
+                  url('assets/delhi.png') no-repeat center/cover;
+    }
+    .p-shimla {
+      background: linear-gradient(to bottom, rgba(10, 31, 68, 0.1), rgba(10, 31, 68, 0.75)),
+                  url('assets/shimla.png') no-repeat center/cover;
+    }
+
+    /* Scenic abstract graphics via CSS elements */
+    .package-image-placeholder::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.15) 0%, transparent 50%);
+    }
+
+    .package-duration {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 0.35rem 0.75rem;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      z-index: 2;
+    }
+
+    .package-body {
+      padding: 1.75rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .package-title {
+      font-size: 1.35rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .package-destination {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .package-destination svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+    }
+
+    .package-price-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+      margin-bottom: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(10, 31, 68, 0.05);
+    }
+
+    .package-price-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .package-price-value {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .package-price-value span {
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+
+    .package-card .btn {
+      width: 100%;
+    }
+
+    /* 4. TAXI RATES SECTION */
+    .rates {
+      background-color: var(--bg-light);
+    }
+
+    .rates-wrapper {
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      border: 1px solid rgba(10, 31, 68, 0.05);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .rates-table-container {
+      overflow-x: auto;
+    }
+
+    .rates-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    .rates-table th {
+      background: var(--primary);
+      color: var(--text-light);
+      padding: 1.25rem 2rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .rates-table td {
+      padding: 1.25rem 2rem;
+      border-bottom: 1px solid rgba(10, 31, 68, 0.05);
+      font-size: 0.95rem;
+      color: var(--text-dark);
+    }
+
+    .rates-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .rates-table tr:nth-child(even) {
+      background-color: rgba(10, 31, 68, 0.02);
+    }
+
+    .rate-highlight {
+      font-weight: 700;
+      color: var(--accent);
+      font-size: 1.1rem;
+    }
+
+    .rates-note {
+      background: var(--accent-light);
+      padding: 1.25rem 2rem;
+      border-top: 1px solid rgba(255, 107, 0, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--primary-light);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .rates-note svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--accent);
+      flex-shrink: 0;
+    }
+
+    /* 5. WHY CHOOSE US SECTION */
+    .why-choose-us {
+      background-color: var(--bg-white);
+      position: relative;
+    }
+
+    .why-choose-us-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+
+    .badge-card {
+      text-align: center;
+      background: var(--bg-light);
+      padding: 2.5rem 1.5rem;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(10, 31, 68, 0.03);
+      transition: var(--transition-normal);
+    }
+
+    .badge-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(255, 107, 0, 0.15);
+      background: var(--bg-white);
+      box-shadow: var(--shadow-md);
+    }
+
+    .badge-check {
+      width: 52px;
+      height: 52px;
+      background-color: rgba(255, 107, 0, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem auto;
+      color: var(--accent);
+    }
+
+    .badge-card:hover .badge-check {
+      background: var(--accent-gradient);
+      color: var(--text-light);
+      box-shadow: var(--shadow-accent);
+    }
+
+    .badge-check svg {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+
+    .badge-card h3 {
+      font-size: 1.15rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .badge-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* 6. BOOKING FORM SECTION */
+    .booking {
+      background-color: var(--bg-light);
+      position: relative;
+    }
+
+    .booking-wrapper {
+      max-width: 750px;
+      margin: 0 auto;
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(10, 31, 68, 0.05);
+      padding: 3rem 2.5rem;
+    }
+
+    .booking-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .form-group-full {
+      grid-column: span 2;
+    }
+
+    .form-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .form-control {
+      padding: 0.85rem 1.25rem;
+      border: 1.5px solid rgba(10, 31, 68, 0.1);
+      border-radius: var(--radius-sm);
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      background-color: var(--bg-light);
+      transition: var(--transition-fast);
+      width: 100%;
+    }
+
+    .form-control:focus {
+      border-color: var(--accent);
+      background-color: var(--bg-white);
+      box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.1);
+    }
+
+    select.form-control {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230a1f44'%3E%3Cpath d='M7 10l5 5 5-5H7z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1.25rem center;
+      background-size: 1.5rem;
+      padding-right: 2.5rem;
+    }
+
+    .booking-wrapper button[type="submit"] {
+      grid-column: span 2;
+      margin-top: 1rem;
+      padding: 1rem;
+      font-size: 1.05rem;
+    }
+
+    /* 7. CONTACT SECTION */
+    .contact {
+      background-color: var(--bg-white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1.8fr;
+      gap: 3.5rem;
+      align-items: start;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 1.25rem;
+    }
+
+    .contact-icon {
+      width: 48px;
+      height: 48px;
+      background-color: var(--accent-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .contact-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+
+    .contact-details h3 {
+      font-size: 1.1rem;
+      color: var(--primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-details p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .contact-actions .btn {
+      width: 100%;
+    }
+
+    .btn-whatsapp {
+      background-color: #25d366;
+      color: var(--text-light);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.25);
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #20ba5a;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+    }
+
+    .btn-phone-accent {
+      background-color: var(--primary);
+      color: var(--text-light);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-phone-accent:hover {
+      background-color: var(--primary-light);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Visual High-fidelity Map Placeholder */
+    .map-container {
+      background: var(--bg-light);
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(10, 31, 68, 0.05);
+      height: 380px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+    }
+
+    .map-svg-mockup {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #e5e9f0;
+    }
+
+    .map-card-info {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      right: 1.5rem;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(10, 31, 68, 0.05);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-md);
+      z-index: 5;
+    }
+
+    .map-card-info h4 {
+      font-size: 0.95rem;
+      color: var(--primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .map-card-info p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .map-card-link {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    /* 8. FOOTER */
+    footer {
+      background: var(--primary-dark);
+      color: var(--text-light);
+      padding: 4rem 0 2rem 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-brand .logo {
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-brand p {
+      color: rgba(255, 255, 255, 0.65);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      max-width: 320px;
+    }
+
+    .footer-title {
+      font-size: 1.1rem;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 1.25rem;
+      color: var(--text-light);
+      position: relative;
+    }
+
+    .footer-title::after {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 2px;
+      background: var(--accent);
+      margin-top: 0.5rem;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.65);
+      font-size: 0.9rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+      padding-left: 4px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-bottom p {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    .footer-legal {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer-legal a {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    .footer-legal a:hover {
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    /* FLOATING WHATSAPP BUTTON */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.45);
+      z-index: 999;
+      cursor: pointer;
+      transition: var(--transition-normal);
+      animation: floatPulse 2s infinite;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      background-color: #20ba5a;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+    }
+
+    .whatsapp-float svg {
+      width: 32px;
+      height: 32px;
+      fill: currentColor;
+    }
+
+    @keyframes floatPulse {
+      0%, 100% {
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      }
+      50% {
+        box-shadow: 0 4px 25px rgba(37, 211, 102, 0.7), 0 0 0 10px rgba(37, 211, 102, 0.15);
+      }
+    }
+
+    /* SUCCESS MODAL */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(10, 31, 68, 0.7);
+      backdrop-filter: blur(5px);
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: var(--transition-normal);
+    }
+
+    .modal-overlay.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-content {
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      padding: 3rem 2.5rem;
+      width: 90%;
+      max-width: 480px;
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(10, 31, 68, 0.05);
+      transform: scale(0.9);
+      transition: var(--transition-normal);
+    }
+
+    .modal-overlay.open .modal-content {
+      transform: scale(1);
+    }
+
+    .modal-success-icon {
+      width: 72px;
+      height: 72px;
+      background-color: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem auto;
+      color: var(--text-light);
+      box-shadow: 0 6px 15px rgba(37, 211, 102, 0.3);
+    }
+
+    .modal-success-icon svg {
+      width: 36px;
+      height: 36px;
+      fill: currentColor;
+    }
+
+    .modal-content h3 {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .modal-content p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+    }
+
+    .modal-content .btn {
+      width: 100%;
+    }
+
+    /* RESPONSIVE MEDIA QUERIES */
+
+    /* Desktop & Large Screen Nav Adjustments */
+    @media (max-width: 1024px) {
+      .hero-content h1 {
+        font-size: 3.25rem;
+      }
+      .contact-grid {
+        gap: 2rem;
+      }
+    }
+
+    /* Tablets (up to 991px) */
+    @media (max-width: 991px) {
+      section {
+        padding: 4rem 0;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+        background: var(--primary-dark);
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 4rem 3rem;
+        gap: 2rem;
+        box-shadow: -10px 0 30px rgba(10, 31, 68, 0.25);
+        transition: var(--transition-normal);
+      }
+
+      .nav-menu.open {
+        right: 0;
+      }
+
+      .nav-link {
+        font-size: 1.15rem;
+      }
+
+      .nav-cta {
+        display: none; /* Collapsed on mobile header, detailed in hamburger or hero */
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+
+    /* Small Mobile Devices (up to 768px) */
+    @media (max-width: 768px) {
+      .hero {
+        padding-top: 4rem;
+        height: auto;
+        padding-bottom: 5rem;
+      }
+
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-content .tagline {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        gap: 0.85rem;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .booking-wrapper {
+        padding: 2rem 1.5rem;
+      }
+
+      .booking-form {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .form-group-full {
+        grid-column: span 1;
+      }
+
+      .booking-wrapper button[type="submit"] {
+        grid-column: span 1;
+      }
+
+      .rates-table th, .rates-table td {
+        padding: 1rem;
+        font-size: 0.85rem;
+      }
+
+      .rates-note {
+        padding: 1rem;
+        font-size: 0.8rem;
+      }
+
+      .whatsapp-float {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 52px;
+        height: 52px;
+      }
+
+      .whatsapp-float svg {
+        width: 28px;
+        height: 28px;
+      }
+
+      .section-header h2 {
+        font-size: 1.85rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-content h1 {
+        font-size: 2.2rem;
+      }
+      .logo-title {
+        font-size: 1.1rem;
+      }
+      .logo-subtitle {
+        font-size: 0.65rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="container nav-wrapper">
+      <!-- Logo -->
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <!-- Sikh Turban Driver at Steering Wheel SVG -->
+          <svg viewBox="0 0 100 100" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25 78C25 64 35 56 50 56C65 56 75 64 75 78" fill="white" />
+            <path d="M43 44C43 51 45 56 50 56C55 56 57 51 57 44" fill="white" />
+            <path d="M38 38C36 29 41 21 50 21C59 21 64 29 62 38C64 41 61 45 50 45C39 45 36 41 38 38Z" fill="var(--accent)" />
+            <circle cx="50" cy="68" r="22" stroke="white" stroke-width="4.5" />
+            <path d="M28 68H72M50 68V90" stroke="white" stroke-width="4.5" />
+            <circle cx="31" cy="59" r="4.5" fill="var(--accent)" />
+            <circle cx="69" cy="59" r="4.5" fill="var(--accent)" />
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">Sarna Tour & Travels</span>
+          <span class="logo-subtitle">Rajpura, Punjab</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link" onclick="toggleMenu(false)">Home</a>
+        <a href="#services" class="nav-link" onclick="toggleMenu(false)">Services</a>
+        <a href="#packages" class="nav-link" onclick="toggleMenu(false)">Tour Packages</a>
+        <a href="#why-choose-us" class="nav-link" onclick="toggleMenu(false)">Why Us</a>
+        <a href="#booking" class="nav-link" onclick="toggleMenu(false)">Book Now</a>
+        <a href="#contact" class="nav-link" onclick="toggleMenu(false)">Contact</a>
+      </nav>
+
+      <!-- Nav Call Button -->
+      <div class="nav-cta">
+        <a href="#booking" class="btn btn-primary" style="padding: 0.55rem 1.25rem; font-size: 0.85rem; border-radius: 4px;">Book Cab</a>
+      </div>
+
+      <!-- Hamburger toggle -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="badge badge-glow-light">
+          <!-- Pulse Dot -->
+          <span style="display:inline-block; width:8px; height:8px; background-color:#25d366; border-radius:50%; margin-right:4px;"></span>
+          24/7 Available in Rajpura
+        </div>
+        <h1>Sarna Tour and Travels</h1>
+        <div class="tagline">"Your Journey, Our Responsibility"</div>
+        <p class="desc">Experience first-class travel and professional cab services starting from Rajpura. Safe, reliable, and premium AC vehicles driven by courteous drivers for all your local, airport transfers, and outstation trips.</p>
+        <div class="hero-actions">
+          <a href="#booking" class="btn btn-primary">Book a Cab Now</a>
+          <a href="#packages" class="btn btn-secondary">View Tour Packages</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. SERVICES SECTION -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Our Expertise</span>
+        <h2>What Services We Provide</h2>
+        <p>Tailored transportation solutions to fulfill all your travel requirements in and around Punjab.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <!-- Sedan Taxi SVG -->
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 13v3c0 .6.4 1 1 1h2"></path>
+              <circle cx="7" cy="17" r="2"></circle>
+              <circle cx="17" cy="17" r="2"></circle>
+              <path d="M5 17h10"></path>
+            </svg>
+          </div>
+          <h3>Local Taxi</h3>
+          <p>Convenient point-to-point and hourly-based city rides in Rajpura. Perfect for errands, shopping, and business visits.</p>
+          <a href="#booking" class="service-link" onclick="prefillBooking('Local Taxi', 'Rajpura')">
+            Book Local 
+            <svg viewBox="0 0 24 24"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg>
+          </a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <!-- SUV/Map SVG -->
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3>Outstation Cab</h3>
+          <p>Travel comfortably to any destination across Punjab, Haryana, Himachal Pradesh, Delhi, and Rajasthan.</p>
+          <a href="#booking" class="service-link" onclick="prefillBooking('Outstation Cab', '')">
+            Book Outstation
+            <svg viewBox="0 0 24 24"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg>
+          </a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <!-- Airplane SVG -->
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path>
+            </svg>
+          </div>
+          <h3>Airport Transfers</h3>
+          <p>Reliable and timely airport drop and pickup services connecting Rajpura directly to Chandigarh Airport (IXC) and Delhi (IGI).</p>
+          <a href="#booking" class="service-link" onclick="prefillBooking('Airport Transfers', 'Chandigarh Airport')">
+            Book Transfer
+            <svg viewBox="0 0 24 24"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg>
+          </a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <!-- Mountain/Tour SVG -->
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 15l4-5 3 4 5-8 5 9H4z"></path>
+              <line x1="2" y1="20" x2="22" y2="20"></line>
+            </svg>
+          </div>
+          <h3>Tour Packages</h3>
+          <p>Exclusive, customized tour itineraries for popular hill stations, historical landmarks, and holy destinations.</p>
+          <a href="#packages" class="service-link">
+            Explore Tours
+            <svg viewBox="0 0 24 24"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. POPULAR TOUR PACKAGES SECTION -->
+  <section id="packages" class="packages">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Perfect Getaways</span>
+        <h2>Popular Tour Packages</h2>
+        <p>Curated holiday packages tailored for memorable vacations with family and friends.</p>
+      </div>
+
+      <div class="packages-grid">
+        <!-- Package 1 -->
+        <div class="package-card">
+          <div class="package-image-placeholder p-manali">
+            <span class="package-duration">3 Days / 2 Nights</span>
+          </div>
+          <div class="package-body">
+            <h3 class="package-title">Manali Tour</h3>
+            <div class="package-destination">
+              <svg viewBox="0 0 24 24"><path d="M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2M12,4A5,5 0 0,1 17,9C17,12.5 13.91,17 12,19.29C10.09,17 7,12.48 7,9A5,5 0 0,1 12,4M12,6.5A2.5,2.5 0 0,0 9.5,9A2.5,2.5 0 0,0 12,11.5A2.5,2.5 0 0,0 14.5,9A2.5,2.5 0 0,0 12,6.5Z"/></svg>
+              Himachal Pradesh
+            </div>
+            <a href="#booking" class="btn btn-outline-primary" onclick="prefillBooking('Tour Packages', 'Manali Tour')">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Package 2 -->
+        <div class="package-card">
+          <div class="package-image-placeholder p-amritsar">
+            <span class="package-duration">1 Day</span>
+          </div>
+          <div class="package-body">
+            <h3 class="package-title">Amritsar Golden Temple</h3>
+            <div class="package-destination">
+              <svg viewBox="0 0 24 24"><path d="M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2M12,4A5,5 0 0,1 17,9C17,12.5 13.91,17 12,19.29C10.09,17 7,12.48 7,9A5,5 0 0,1 12,4M12,6.5A2.5,2.5 0 0,0 9.5,9A2.5,2.5 0 0,0 12,11.5A2.5,2.5 0 0,0 14.5,9A2.5,2.5 0 0,0 12,6.5Z"/></svg>
+              Punjab
+            </div>
+            <a href="#booking" class="btn btn-outline-primary" onclick="prefillBooking('Tour Packages', 'Amritsar Golden Temple')">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Package 3 -->
+        <div class="package-card">
+          <div class="package-image-placeholder p-delhi">
+            <span class="package-duration">2 Days / 1 Night</span>
+          </div>
+          <div class="package-body">
+            <h3 class="package-title">Delhi Tour</h3>
+            <div class="package-destination">
+              <svg viewBox="0 0 24 24"><path d="M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2M12,4A5,5 0 0,1 17,9C17,12.5 13.91,17 12,19.29C10.09,17 7,12.48 7,9A5,5 0 0,1 12,4M12,6.5A2.5,2.5 0 0,0 9.5,9A2.5,2.5 0 0,0 12,11.5A2.5,2.5 0 0,0 14.5,9A2.5,2.5 0 0,0 12,6.5Z"/></svg>
+              Delhi NCR
+            </div>
+            <a href="#booking" class="btn btn-outline-primary" onclick="prefillBooking('Tour Packages', 'Delhi Tour')">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Package 4 -->
+        <div class="package-card">
+          <div class="package-image-placeholder p-shimla">
+            <span class="package-duration">4 Days / 3 Nights</span>
+          </div>
+          <div class="package-body">
+            <h3 class="package-title">Shimla Tour</h3>
+            <div class="package-destination">
+              <svg viewBox="0 0 24 24"><path d="M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2M12,4A5,5 0 0,1 17,9C17,12.5 13.91,17 12,19.29C10.09,17 7,12.48 7,9A5,5 0 0,1 12,4M12,6.5A2.5,2.5 0 0,0 9.5,9A2.5,2.5 0 0,0 12,11.5A2.5,2.5 0 0,0 14.5,9A2.5,2.5 0 0,0 12,6.5Z"/></svg>
+              Himachal Pradesh
+            </div>
+            <a href="#booking" class="btn btn-outline-primary" onclick="prefillBooking('Tour Packages', 'Shimla Tour')">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- 5. WHY CHOOSE US SECTION -->
+  <section id="why-choose-us" class="why-choose-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Our Commitments</span>
+        <h2>Why Choose Sarna Travels</h2>
+        <p>We pride ourselves on delivering standard-setting taxi services that ensure passengers reach their destinations safely.</p>
+      </div>
+
+      <div class="why-choose-us-grid">
+        <!-- Badge 1 -->
+        <div class="badge-card">
+          <div class="badge-check">
+            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M10,17L5,12L6.41,10.59L10,14.17L17.59,6.58L19,8L10,17Z"/></svg>
+          </div>
+          <h3>Professional Drivers</h3>
+          <p>Well-trained, licensed, and highly experienced drivers who prioritize safety and hospitality.</p>
+        </div>
+
+        <!-- Badge 2 -->
+        <div class="badge-card">
+          <div class="badge-check">
+            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M10,17L5,12L6.41,10.59L10,14.17L17.59,6.58L19,8L10,17Z"/></svg>
+          </div>
+          <h3>Clean & AC Vehicles</h3>
+          <p>A fleet of sanitised, well-maintained hatchbacks, sedans, and SUVs with chilling air conditioning.</p>
+        </div>
+
+        <!-- Badge 3 -->
+        <div class="badge-card">
+          <div class="badge-check">
+            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M10,17L5,12L6.41,10.59L10,14.17L17.59,6.58L19,8L10,17Z"/></svg>
+          </div>
+          <h3>24/7 Available</h3>
+          <p>Round-the-clock pickup support and booking assistance. We are ready when you are.</p>
+        </div>
+
+        <!-- Badge 4 -->
+        <div class="badge-card">
+          <div class="badge-check">
+            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M10,17L5,12L6.41,10.59L10,14.17L17.59,6.58L19,8L10,17Z"/></svg>
+          </div>
+          <h3>Best Rates Guaranteed</h3>
+          <p>Budget-friendly competitive pricing without sacrificing the standard of travel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. BOOKING FORM SECTION -->
+  <section id="booking" class="booking">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Quick Reservation</span>
+        <h2>Book Your Ride Instantly</h2>
+        <p>Fill out the form below, and our team will get back to you immediately to confirm your cab details.</p>
+      </div>
+
+      <div class="booking-wrapper">
+        <form class="booking-form" id="taxiBookingForm" onsubmit="handleBookingSubmit(event)">
+          <!-- Name -->
+          <div class="form-group">
+            <label for="bookingName" class="form-label">Full Name</label>
+            <input type="text" id="bookingName" class="form-control" placeholder="Enter your name" required>
+          </div>
+
+          <!-- Phone -->
+          <div class="form-group">
+            <label for="bookingPhone" class="form-label">Phone Number</label>
+            <input type="tel" id="bookingPhone" class="form-control" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+          </div>
+
+          <!-- Pickup Location -->
+          <div class="form-group">
+            <label for="bookingPickup" class="form-label">Pickup Location</label>
+            <input type="text" id="bookingPickup" class="form-control" placeholder="e.g. Rajpura Railway Station" required>
+          </div>
+
+          <!-- Destination -->
+          <div class="form-group">
+            <label for="bookingDestination" class="form-label">Destination Location</label>
+            <input type="text" id="bookingDestination" class="form-control" placeholder="e.g. Chandigarh Airport" required>
+          </div>
+
+          <!-- Date -->
+          <div class="form-group">
+            <label for="bookingDate" class="form-label">Journey Date</label>
+            <input type="date" id="bookingDate" class="form-control" required>
+          </div>
+
+          <!-- Service Type -->
+          <div class="form-group">
+            <label for="bookingService" class="form-label">Service Type</label>
+            <select id="bookingService" class="form-control" required>
+              <option value="" disabled selected>Select service type</option>
+              <option value="Local Taxi">Local Taxi (City Ride)</option>
+              <option value="Outstation Cab">Outstation Cab</option>
+              <option value="Airport Transfers">Airport Transfer</option>
+              <option value="Tour Packages">Tour Package</option>
+            </select>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary">Book Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Get In Touch</span>
+        <h2>Contact Sarna Travels</h2>
+        <p>Have questions? Need a custom travel quotation? Contact us directly via WhatsApp or Phone Call.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact details -->
+        <div class="contact-info">
+          <!-- Address -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z"/></svg>
+            </div>
+            <div class="contact-details">
+              <h3>Our Head Office</h3>
+              <p>Main Bazaar Road, Near Railway Station,<br>Rajpura, Punjab - 140401, India</p>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4M20,6L12,11L4,6H20M20,18H4V8L12,13L20,8V18Z"/></svg>
+            </div>
+            <div class="contact-details">
+              <h3>Email Support</h3>
+              <p><a href="mailto:Cssarna92@gmail.com" style="color: var(--accent); font-weight: 500;">Cssarna92@gmail.com</a></p>
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div class="contact-actions">
+            <!-- WhatsApp Action -->
+            <a href="https://wa.me/917986506487?text=Hi%20Sarna%20Travels,%20I'm%20interested%20in%20booking%20a%20cab." target="_blank" class="btn btn-whatsapp">
+              <!-- WhatsApp Icon SVG -->
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.02 1.66c2.2 0 4.27.86 5.82 2.41a8.18 8.18 0 0 1 2.41 5.84c0 4.54-3.7 8.24-8.24 8.24-1.45 0-2.87-.38-4.12-1.1l-.3-.18-3.06.8.82-2.98-.2-.32A8.18 8.18 0 0 1 3.82 12c0-4.54 3.7-8.24 8.24-8.24zm-3.6 3.19c-.2-.04-.4-.06-.58-.06-.18 0-.47.07-.71.3-.24.24-.93.92-.93 2.24s.96 2.6 1.1 2.78c.14.19 1.9 2.9 4.6 4.07.64.28 1.14.45 1.52.57.65.2 1.24.18 1.7.11.52-.08 1.6-.66 1.82-1.29.23-.63.23-1.17.16-1.28-.07-.1-.25-.17-.53-.31s-1.66-.82-1.92-.91c-.26-.1-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.16.19-.33.21-.61.07s-1.18-.44-2.26-1.4c-.84-.75-1.4-1.68-1.57-1.96-.17-.28-.02-.43.12-.57.13-.13.29-.34.43-.51.14-.17.19-.29.29-.49.1-.2.05-.38-.02-.53-.07-.15-.64-1.55-.88-2.12-.24-.58-.48-.5-.66-.5z"/>
+              </svg>
+              Chat on WhatsApp
+            </a>
+
+            <!-- Call Now Action -->
+            <a href="tel:+917986506487" class="btn btn-phone-accent">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+              </svg>
+              Call Us: +91 79865 06487
+            </a>
+          </div>
+        </div>
+
+        <!-- High-fidelity Vector Map Mockup -->
+        <div class="map-container">
+          <svg class="map-svg-mockup" viewBox="0 0 600 380" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background Map Grid -->
+            <rect width="100%" height="100%" fill="#e9ecf3"/>
+            
+            <!-- Styled Grid Patterns for Roads -->
+            <g stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+              <!-- Horizontal main highways -->
+              <path d="M-20,100 L620,100"/>
+              <path d="M-20,280 L620,280"/>
+              
+              <!-- Vertical main highways -->
+              <path d="M150,-20 L150,400"/>
+              <path d="M450,-20 L450,400"/>
+              
+              <!-- Diagonals / Alternate Roads -->
+              <path d="M-20,40 L620,360"/>
+              <path d="M150,100 L450,280" stroke-width="12" stroke="#d5dee9"/> <!-- NH1 Highway -->
+            </g>
+
+            <!-- Major Highways Highlight -->
+            <g stroke="#ffd280" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M-20,40 L620,360"/>
+              <path d="M150,100 L450,280"/>
+            </g>
+            
+            <!-- Route path indicator (Rajpura to Chandigarh) -->
+            <path d="M300,190 L380,150 L450,100 L500,60" fill="none" stroke="var(--accent)" stroke-width="4" stroke-dasharray="8 6" stroke-linecap="round"/>
+            
+            <!-- Pin points -->
+            <!-- Rajpura Center Pin -->
+            <g transform="translate(300,190)">
+              <circle cx="0" cy="0" r="16" fill="rgba(10, 31, 68, 0.15)"/>
+              <circle cx="0" cy="0" r="8" fill="var(--primary)"/>
+              <circle cx="0" cy="0" r="4" fill="var(--text-light)"/>
+              <path d="M0,-8 L0,-24" stroke="var(--primary)" stroke-width="2"/>
+              <rect x="-45" y="-44" width="90" height="20" rx="4" fill="var(--primary)" />
+              <text x="0" y="-30" fill="white" font-size="9" font-family="'Montserrat', sans-serif" font-weight="700" text-anchor="middle">RAJPURA (HQ)</text>
+            </g>
+
+            <!-- Chandigarh Airport Pin -->
+            <g transform="translate(500,60)">
+              <circle cx="0" cy="0" r="12" fill="rgba(255, 107, 0, 0.15)"/>
+              <circle cx="0" cy="0" r="6" fill="var(--accent)"/>
+              <circle cx="0" cy="0" r="3" fill="var(--text-light)"/>
+              <path d="M0,-6 L0,-20" stroke="var(--accent)" stroke-width="2"/>
+              <rect x="-60" y="-40" width="120" height="20" rx="4" fill="var(--accent)"/>
+              <text x="0" y="-27" fill="white" font-size="9" font-family="'Montserrat', sans-serif" font-weight="700" text-anchor="middle">Chandigarh Airport</text>
+            </g>
+            
+            <!-- Patiala Pin -->
+            <g transform="translate(150,280)">
+              <circle cx="0" cy="0" r="6" fill="#64748b"/>
+              <text x="0" y="18" fill="var(--primary)" font-size="10" font-family="'Poppins', sans-serif" font-weight="600" text-anchor="middle">Patiala</text>
+            </g>
+
+            <!-- Ambala Pin -->
+            <g transform="translate(450,280)">
+              <circle cx="0" cy="0" r="6" fill="#64748b"/>
+              <text x="0" y="18" fill="var(--primary)" font-size="10" font-family="'Poppins', sans-serif" font-weight="600" text-anchor="middle">Ambala</text>
+            </g>
+          </svg>
+
+          <!-- Floating card detail -->
+          <div class="map-card-info">
+            <h4>Sarna Tour and Travels Office</h4>
+            <p>Main Bazaar Road, Near Railway Station, Rajpura, Punjab</p>
+            <a href="https://maps.google.com/?q=Rajpura+Railway+Station" target="_blank" class="map-card-link">
+              Open in Google Maps
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Logo and info -->
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">
+              <!-- Sikh Turban Driver at Steering Wheel SVG -->
+              <svg viewBox="0 0 100 100" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25 78C25 64 35 56 50 56C65 56 75 64 75 78" fill="white" />
+                <path d="M43 44C43 51 45 56 50 56C55 56 57 51 57 44" fill="white" />
+                <path d="M38 38C36 29 41 21 50 21C59 21 64 29 62 38C64 41 61 45 50 45C39 45 36 41 38 38Z" fill="var(--accent)" />
+                <circle cx="50" cy="68" r="22" stroke="white" stroke-width="4.5" />
+                <path d="M28 68H72M50 68V90" stroke="white" stroke-width="4.5" />
+                <circle cx="31" cy="59" r="4.5" fill="var(--accent)" />
+                <circle cx="69" cy="59" r="4.5" fill="var(--accent)" />
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title">Sarna Tour & Travels</span>
+              <span class="logo-subtitle">Your Journey, Our Responsibility</span>
+            </div>
+          </a>
+          <p>Providing premium and reliable tourist cabs, local taxis, and outstation holiday tours since decades. Headquartered in Rajpura, Punjab.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-title">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="#booking" onclick="prefillBooking('Local Taxi', 'Rajpura')">Local Rides</a></li>
+            <li><a href="#booking" onclick="prefillBooking('Outstation Cab', '')">Outstation Cabs</a></li>
+            <li><a href="#booking" onclick="prefillBooking('Airport Transfers', 'Chandigarh Airport')">Airport Transfers</a></li>
+            <li><a href="#packages">Holiday Tour Packages</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-title">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#packages">Popular Packages</a></li>
+            <li><a href="#booking">Book Cab</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sarna Tour and Travels. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP WIDGET -->
+  <a href="https://wa.me/917986506487?text=Hi%20Sarna%20Travels,%20I'm%20interested%20in%20booking%20a%20cab." target="_blank" class="whatsapp-float" aria-label="Chat with Sarna Travels on WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.02 1.66c2.2 0 4.27.86 5.82 2.41a8.18 8.18 0 0 1 2.41 5.84c0 4.54-3.7 8.24-8.24 8.24-1.45 0-2.87-.38-4.12-1.1l-.3-.18-3.06.8.82-2.98-.2-.32A8.18 8.18 0 0 1 3.82 12c0-4.54 3.7-8.24 8.24-8.24zm-3.6 3.19c-.2-.04-.4-.06-.58-.06-.18 0-.47.07-.71.3-.24.24-.93.92-.93 2.24s.96 2.6 1.1 2.78c.14.19 1.9 2.9 4.6 4.07.64.28 1.14.45 1.52.57.65.2 1.24.18 1.7.11.52-.08 1.6-.66 1.82-1.29.23-.63.23-1.17.16-1.28-.07-.1-.25-.17-.53-.31s-1.66-.82-1.92-.91c-.26-.1-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.16.19-.33.21-.61.07s-1.18-.44-2.26-1.4c-.84-.75-1.4-1.68-1.57-1.96-.17-.28-.02-.43.12-.57.13-.13.29-.34.43-.51.14-.17.19-.29.29-.49.1-.2.05-.38-.02-.53-.07-.15-.64-1.55-.88-2.12-.24-.58-.48-.5-.66-.5z"/>
+    </svg>
+  </a>
+
+  <!-- DYNAMIC BOOKING CONFIRMATION MODAL -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-content">
+      <div class="modal-success-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M9,16.17L4.83,12l-1.42,1.41L9,19 21,7l-1.41-1.41L9,16.17Z"/>
+        </svg>
+      </div>
+      <h3>Booking Request Received!</h3>
+      <p id="modalMessage">Thank you for choosing Sarna Tour and Travels. We will contact you on your registered phone number shortly to confirm your driver details and ride fare.</p>
+      <button class="btn btn-primary" onclick="closeModal()">Great, Thanks!</button>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Set min date for booking input to today
+    document.addEventListener("DOMContentLoaded", () => {
+      const today = new Date().toISOString().split('T')[0];
+      document.getElementById('bookingDate').value = today;
+      document.getElementById('bookingDate').min = today;
+    });
+
+    // Handle header transparency toggle on scroll
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile Hamburger Menu control
+    function toggleMenu(forceState) {
+      const toggleBtn = document.getElementById('menu-toggle');
+      const menu = document.getElementById('nav-menu');
+      
+      let isOpen = toggleBtn.classList.contains('open');
+      if (typeof forceState === 'boolean') {
+        isOpen = !forceState; // invert since we'll trigger toggle
+      }
+      
+      if (isOpen) {
+        toggleBtn.classList.remove('open');
+        menu.classList.remove('open');
+      } else {
+        toggleBtn.classList.add('open');
+        menu.classList.open = true;
+        menu.classList.add('open');
+      }
+    }
+
+    // Prefill booking form fields when service or package cards clicked
+    function prefillBooking(serviceType, destination) {
+      const serviceSelect = document.getElementById('bookingService');
+      const destinationInput = document.getElementById('bookingDestination');
+      
+      if (serviceType) {
+        serviceSelect.value = serviceType;
+      }
+      if (destination) {
+        destinationInput.value = destination;
+      }
+      
+      // Auto-focus name field for ease
+      document.getElementById('bookingName').focus();
+    }
+
+    // Handle Form Submit
+    function handleBookingSubmit(event) {
+      event.preventDefault();
+      
+      const name = document.getElementById('bookingName').value;
+      const phone = document.getElementById('bookingPhone').value;
+      const pickup = document.getElementById('bookingPickup').value;
+      const destination = document.getElementById('bookingDestination').value;
+      const date = document.getElementById('bookingDate').value;
+      const service = document.getElementById('bookingService').value;
+      
+      // Construct dynamic message in modal
+      const modalMessage = document.getElementById('modalMessage');
+      modalMessage.innerHTML = `Hi <strong>${name}</strong>, your taxi booking request for <strong>${service}</strong> on <strong>${date}</strong> (from <strong>${pickup}</strong> to <strong>${destination}</strong>) has been logged. A representative will contact you on <strong>${phone}</strong> within 10 minutes to verify pricing and assign a cab.`;
+      
+      // Open Success Modal
+      document.getElementById('successModal').classList.add('open');
+      
+      // Reset Form fields
+      document.getElementById('taxiBookingForm').reset();
+      
+      // Reset date to today
+      const today = new Date().toISOString().split('T')[0];
+      document.getElementById('bookingDate').value = today;
+    }
+
+    // Close Success Modal
+    function closeModal() {
+      document.getElementById('successModal').classList.remove('open');
+    }
+
+    // Close modal if clicked outside modal-content
+    window.addEventListener('click', (event) => {
+      const modal = document.getElementById('successModal');
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+  </script>
+</body>
+</html>
