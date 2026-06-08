@@ -241,16 +241,14 @@
       gap: 0.75rem;
     }
 
-    .logo-icon {
+    .logo-img {
       width: 42px;
       height: 42px;
-      background: var(--primary-dark);
-      border: 2px solid var(--accent);
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      object-fit: cover;
+      border: 2px solid var(--accent);
       box-shadow: 0 4px 10px rgba(10, 31, 68, 0.3);
+      background: var(--bg-white);
     }
 
     .logo-text {
@@ -1461,18 +1459,7 @@
     <div class="container nav-wrapper">
       <!-- Logo -->
       <a href="#" class="logo">
-        <div class="logo-icon">
-          <!-- Sikh Turban Driver at Steering Wheel SVG -->
-          <svg viewBox="0 0 100 100" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M25 78C25 64 35 56 50 56C65 56 75 64 75 78" fill="white" />
-            <path d="M43 44C43 51 45 56 50 56C55 56 57 51 57 44" fill="white" />
-            <path d="M38 38C36 29 41 21 50 21C59 21 64 29 62 38C64 41 61 45 50 45C39 45 36 41 38 38Z" fill="var(--accent)" />
-            <circle cx="50" cy="68" r="22" stroke="white" stroke-width="4.5" />
-            <path d="M28 68H72M50 68V90" stroke="white" stroke-width="4.5" />
-            <circle cx="31" cy="59" r="4.5" fill="var(--accent)" />
-            <circle cx="69" cy="59" r="4.5" fill="var(--accent)" />
-          </svg>
-        </div>
+        <img src="assets/logo.png" alt="Sarna Tour & Travels Logo" class="logo-img">
         <div class="logo-text">
           <span class="logo-title">Sarna Tour & Travels</span>
           <span class="logo-subtitle">Rajpura, Punjab</span>
@@ -1941,18 +1928,7 @@
         <!-- Logo and info -->
         <div class="footer-brand">
           <a href="#" class="logo">
-            <div class="logo-icon">
-              <!-- Sikh Turban Driver at Steering Wheel SVG -->
-              <svg viewBox="0 0 100 100" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M25 78C25 64 35 56 50 56C65 56 75 64 75 78" fill="white" />
-                <path d="M43 44C43 51 45 56 50 56C55 56 57 51 57 44" fill="white" />
-                <path d="M38 38C36 29 41 21 50 21C59 21 64 29 62 38C64 41 61 45 50 45C39 45 36 41 38 38Z" fill="var(--accent)" />
-                <circle cx="50" cy="68" r="22" stroke="white" stroke-width="4.5" />
-                <path d="M28 68H72M50 68V90" stroke="white" stroke-width="4.5" />
-                <circle cx="31" cy="59" r="4.5" fill="var(--accent)" />
-                <circle cx="69" cy="59" r="4.5" fill="var(--accent)" />
-              </svg>
-            </div>
+            <img src="assets/logo.png" alt="Sarna Tour & Travels Logo" class="logo-img">
             <div class="logo-text">
               <span class="logo-title">Sarna Tour & Travels</span>
               <span class="logo-subtitle">Your Journey, Our Responsibility</span>
