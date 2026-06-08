@@ -984,59 +984,125 @@
       box-shadow: var(--shadow-md);
     }
 
-    /* Visual High-fidelity Map Placeholder */
-    .map-container {
-      background: var(--bg-light);
+    /* Popular Destinations / Travel Guide styling */
+    .destinations-card {
+      background: var(--bg-white);
       border-radius: var(--radius-lg);
       border: 1px solid rgba(10, 31, 68, 0.05);
-      height: 380px;
-      position: relative;
-      overflow: hidden;
+      padding: 2rem;
       box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      transition: var(--transition-normal);
     }
 
-    .map-svg-mockup {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: #e5e9f0;
+    .destinations-card:hover {
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(255, 107, 0, 0.1);
     }
 
-    .map-card-info {
-      position: absolute;
-      bottom: 1.5rem;
-      left: 1.5rem;
-      right: 1.5rem;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(10, 31, 68, 0.05);
-      border-radius: var(--radius-md);
-      padding: 1.25rem;
-      box-shadow: var(--shadow-md);
-      z-index: 5;
-    }
-
-    .map-card-info h4 {
-      font-size: 0.95rem;
+    .destinations-header h3 {
+      font-size: 1.35rem;
       color: var(--primary);
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.35rem;
     }
 
-    .map-card-info p {
+    .destinations-header p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .destinations-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .destination-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.85rem 1rem;
+      background: var(--bg-light);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(10, 31, 68, 0.02);
+      transition: var(--transition-normal);
+      gap: 1rem;
+    }
+
+    .destination-item:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+      border-color: rgba(255, 107, 0, 0.15);
+      background: var(--bg-white);
+    }
+
+    .destination-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .destination-thumb {
+      width: 56px;
+      height: 56px;
+      border-radius: var(--radius-sm);
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 2px solid rgba(10, 31, 68, 0.08);
+      transition: var(--transition-normal);
+    }
+
+    .destination-item:hover .destination-thumb {
+      transform: scale(1.05);
+      border-color: var(--accent);
+    }
+
+    .destination-info h4 {
+      font-size: 1rem;
+      color: var(--primary);
+      margin-bottom: 0.15rem;
+    }
+
+    .destination-info p {
       font-size: 0.8rem;
       color: var(--text-muted);
-      margin-bottom: 0.5rem;
     }
 
-    .map-card-link {
-      font-size: 0.8rem;
+    .destination-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .destination-link {
+      font-size: 0.85rem;
       font-weight: 600;
       color: var(--accent);
       display: inline-flex;
       align-items: center;
       gap: 0.25rem;
+      transition: var(--transition-fast);
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius-sm);
+      background: transparent;
+    }
+
+    .destination-item:hover .destination-link {
+      background: var(--accent-light);
+    }
+
+    .destination-link svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+      transition: var(--transition-fast);
+    }
+
+    .destination-link:hover svg {
+      transform: translateX(3px);
     }
 
     /* 8. FOOTER */
@@ -1779,80 +1845,89 @@
           </div>
         </div>
 
-        <!-- High-fidelity Vector Map Mockup -->
-        <div class="map-container">
-          <svg class="map-svg-mockup" viewBox="0 0 600 380" xmlns="http://www.w3.org/2000/svg">
-            <!-- Background Map Grid -->
-            <rect width="100%" height="100%" fill="#e9ecf3"/>
-            
-            <!-- Styled Grid Patterns for Roads -->
-            <g stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
-              <!-- Horizontal main highways -->
-              <path d="M-20,100 L620,100"/>
-              <path d="M-20,280 L620,280"/>
-              
-              <!-- Vertical main highways -->
-              <path d="M150,-20 L150,400"/>
-              <path d="M450,-20 L450,400"/>
-              
-              <!-- Diagonals / Alternate Roads -->
-              <path d="M-20,40 L620,360"/>
-              <path d="M150,100 L450,280" stroke-width="12" stroke="#d5dee9"/> <!-- NH1 Highway -->
-            </g>
+        <!-- Popular Destinations Guide -->
+        <div class="destinations-card">
+          <div class="destinations-header">
+            <h3>Popular Destinations from Rajpura</h3>
+            <p>Plan your next journey with our professional outstation taxi service. Clean cabs and reliable drivers.</p>
+          </div>
+          
+          <div class="destinations-list">
+            <!-- Shimla Hills -->
+            <div class="destination-item">
+              <div class="destination-meta">
+                <img src="assets/shimla.png" alt="Shimla Hills" class="destination-thumb">
+                <div class="destination-info">
+                  <h4>Shimla Hills (Himachal)</h4>
+                  <p>130 km | Scenic Hills & Mall Road</p>
+                </div>
+              </div>
+              <div class="destination-cta">
+                <a href="#booking" class="destination-link">
+                  Book Cab
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
 
-            <!-- Major Highways Highlight -->
-            <g stroke="#ffd280" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M-20,40 L620,360"/>
-              <path d="M150,100 L450,280"/>
-            </g>
-            
-            <!-- Route path indicator (Rajpura to Chandigarh) -->
-            <path d="M300,190 L380,150 L450,100 L500,60" fill="none" stroke="var(--accent)" stroke-width="4" stroke-dasharray="8 6" stroke-linecap="round"/>
-            
-            <!-- Pin points -->
-            <!-- Rajpura Center Pin -->
-            <g transform="translate(300,190)">
-              <circle cx="0" cy="0" r="16" fill="rgba(10, 31, 68, 0.15)"/>
-              <circle cx="0" cy="0" r="8" fill="var(--primary)"/>
-              <circle cx="0" cy="0" r="4" fill="var(--text-light)"/>
-              <path d="M0,-8 L0,-24" stroke="var(--primary)" stroke-width="2"/>
-              <rect x="-45" y="-44" width="90" height="20" rx="4" fill="var(--primary)" />
-              <text x="0" y="-30" fill="white" font-size="9" font-family="'Montserrat', sans-serif" font-weight="700" text-anchor="middle">RAJPURA (HQ)</text>
-            </g>
+            <!-- Manali Getaway -->
+            <div class="destination-item">
+              <div class="destination-meta">
+                <img src="assets/manali.png" alt="Manali Getaway" class="destination-thumb">
+                <div class="destination-info">
+                  <h4>Manali Getaway</h4>
+                  <p>310 km | Solang Valley & Snow Peaks</p>
+                </div>
+              </div>
+              <div class="destination-cta">
+                <a href="#booking" class="destination-link">
+                  Book Cab
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
 
-            <!-- Chandigarh Airport Pin -->
-            <g transform="translate(500,60)">
-              <circle cx="0" cy="0" r="12" fill="rgba(255, 107, 0, 0.15)"/>
-              <circle cx="0" cy="0" r="6" fill="var(--accent)"/>
-              <circle cx="0" cy="0" r="3" fill="var(--text-light)"/>
-              <path d="M0,-6 L0,-20" stroke="var(--accent)" stroke-width="2"/>
-              <rect x="-60" y="-40" width="120" height="20" rx="4" fill="var(--accent)"/>
-              <text x="0" y="-27" fill="white" font-size="9" font-family="'Montserrat', sans-serif" font-weight="700" text-anchor="middle">Chandigarh Airport</text>
-            </g>
-            
-            <!-- Patiala Pin -->
-            <g transform="translate(150,280)">
-              <circle cx="0" cy="0" r="6" fill="#64748b"/>
-              <text x="0" y="18" fill="var(--primary)" font-size="10" font-family="'Poppins', sans-serif" font-weight="600" text-anchor="middle">Patiala</text>
-            </g>
+            <!-- Amritsar Golden Temple -->
+            <div class="destination-item">
+              <div class="destination-meta">
+                <img src="assets/amritsar.png" alt="Amritsar Golden Temple" class="destination-thumb">
+                <div class="destination-info">
+                  <h4>Amritsar (Golden Temple)</h4>
+                  <p>190 km | Spiritual & Heritage Hub</p>
+                </div>
+              </div>
+              <div class="destination-cta">
+                <a href="#booking" class="destination-link">
+                  Book Cab
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
 
-            <!-- Ambala Pin -->
-            <g transform="translate(450,280)">
-              <circle cx="0" cy="0" r="6" fill="#64748b"/>
-              <text x="0" y="18" fill="var(--primary)" font-size="10" font-family="'Poppins', sans-serif" font-weight="600" text-anchor="middle">Ambala</text>
-            </g>
-          </svg>
-
-          <!-- Floating card detail -->
-          <div class="map-card-info">
-            <h4>Sarna Tour and Travels Office</h4>
-            <p>Main Bazaar Road, Near Railway Station, Rajpura, Punjab</p>
-            <a href="https://maps.google.com/?q=Rajpura+Railway+Station" target="_blank" class="map-card-link">
-              Open in Google Maps
-              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
-                <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
-              </svg>
-            </a>
+            <!-- Delhi IGI Airport -->
+            <div class="destination-item">
+              <div class="destination-meta">
+                <img src="assets/delhi.png" alt="Delhi Airport" class="destination-thumb">
+                <div class="destination-info">
+                  <h4>Delhi (IGI Airport / City)</h4>
+                  <p>240 km | Flights & Business Travel</p>
+                </div>
+              </div>
+              <div class="destination-cta">
+                <a href="#booking" class="destination-link">
+                  Book Cab
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
