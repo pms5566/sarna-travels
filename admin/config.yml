@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: pms5566/sarna-travels
+  name: git-gateway
   branch: main
 
 media_folder: assets
